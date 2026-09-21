@@ -90,7 +90,9 @@ extension/
    - `measure` call whose expected fan-out (Pixel IDs initialized at call time) doesn't match the Pixel IDs actually seen on the wire (dropped/blocked broadcast).
 
 7. **Toolbar badge**
-   Total event count across all detected pixels on the current tab; turns red/warning if a validation issue is detected on any pixel.
+   The current detection build uses a muted icon by default, switches to a green icon when the SDK or pixel is detected, and shows the count of distinct initialized Pixel IDs on the current tab. Event counts and validation warnings remain planned for the later event-capture work.
+
+**Current event display:** The popup lists captured `measure` and `measureSingle` calls with their target Pixel IDs, event data, and options. It keeps the latest 100 calls per tab in memory. These are calls made by the page, not confirmed network deliveries; wire-payload capture and sent/blocked status remain future work.
 
 ## Manifest permissions
 

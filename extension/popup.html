@@ -10,6 +10,8 @@
         width: 320px;
         padding: 12px;
         color: #1a1a1a;
+        max-height: 550px;
+        overflow-y: auto;
       }
       h1 {
         font-size: 14px;
@@ -71,6 +73,31 @@
         margin-left: 4px;
         color: #444;
       }
+      .event {
+        border: 1px solid #e2e2e2;
+        border-radius: 8px;
+        padding: 9px 10px;
+        margin: 7px 0;
+      }
+      .event summary { cursor: pointer; font-weight: 600; }
+      .event-meta { color: #666; font-size: 11px; margin: 4px 0 0; }
+      .event pre {
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        background: #f6f7f7;
+        padding: 8px;
+        border-radius: 5px;
+        font-size: 11px;
+      }
+      .reload-button {
+        border: 1px solid #d2d8d5;
+        background: #fff;
+        border-radius: 6px;
+        padding: 5px 8px;
+        font: inherit;
+        cursor: pointer;
+      }
+      .section-heading { display: flex; align-items: center; justify-content: space-between; }
     </style>
   </head>
   <body>
